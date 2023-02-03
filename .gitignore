@@ -1,0 +1,8 @@
+# nodejs-express-eslint-seed prototype
+node_modules
+.env
+
+*.zip
+.vscode/
+
+package-lock.json

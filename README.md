@@ -1,1 +1,1 @@
-# node-express-eslint-seed
+# Welcome to node-express-eslint-seed project!
