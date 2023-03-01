@@ -1,12 +1,16 @@
 module.exports = {
   env: {
-    'node': true,
-    'commonjs': true,
-    'es2021': true,
-    'es6': true,
-    'mocha': true
+    node: true,
+    commonjs: true,
+    es2021: true,
+    es6: true,
+    mocha: true
   },
-  extends: 'eslint:recommended',
+  extends: [
+    'eslint:recommended',
+    'airbnb',
+    'prettier'
+  ],
   overrides: [
   ],
   parserOptions: {
@@ -18,11 +22,11 @@ module.exports = {
       'error',
       'unix'
     ],
-    'quotes': [
+    quotes: [
       'error',
       'single'
     ],
-    'semi': [
+    semi: [
       'error',
       'always'
     ],
@@ -32,7 +36,10 @@ module.exports = {
     'no-unused-vars': [
       1
     ],
+    'arrow-body-style': 0,
+    'prefer-arrow-callback': 0,
+    'comma-dangle': ['error', 'never'],
     'prefer-const': 'error',
-    'no-var': 'error',
-  },
+    'no-var': 'error'
+  }
 };
