@@ -87,3 +87,85 @@ but never reassigned after the initial assignment.
 ```
 This rule is aimed at discouraging the use of var and encouraging the use of const or let instead.
 ```
+
+### require-atomic-updates
+```
+This rule aims to report assignments to variables or properties in cases where the assignments may be based on outdated values.
+```
+
+### no-case-declarations
+```
+This rule aims to prevent access to uninitialized lexical bindings as well as accessing hoisted functions across case clauses.
+```
+
+### no-useless-escape
+```
+This rule flags escapes that can be safely removed without changing behavior.
+```
+
+### space-before-blocks
+```
+This rule will enforce consistency of spacing before blocks. It is only applied on blocks that don’t begin on a new line.
+
+- This rule ignores spacing which is between => and a block. The spacing is handled by the arrow-spacing rule.
+- This rule ignores spacing which is between a keyword and a block. The spacing is handled by the keyword-spacing rule.
+- This rule ignores spacing which is between : of a switch case and a block. The spacing is handled by the switch-colon-spacing rule.
+```
+
+### no-else-return
+```
+This rule is aimed at highlighting an unnecessary block of code following an if containing a return statement. As such, it will warn when it encounters an else following a chain of ifs, all of them containing a return statement.
+```
+
+### spaced-comment
+```
+This rule will enforce consistency of spacing after the start of a comment // or /*. It also provides several exceptions for various documentation styles.
+```
+
+### keyword-spacing
+```
+This rule enforces consistent spacing around keywords and keyword-like tokens: as (in module declarations), async (of async functions), await (of await expressions), break, case, catch, class, const, continue, debugger, default, delete, do, else, export, extends, finally, for, from (in module declarations), function, get (of getters), if, import, in (in for-in statements), let, new, of (in for-of statements), return, set (of setters), static, super, switch, this, throw, try, typeof, var, void, while, with, and yield. This rule is designed carefully not to conflict with other spacing rules: it does not apply to spacing where other rules report problems.
+```
+
+### no-multiple-empty-lines
+```
+This rule aims to reduce the scrolling required when reading through your code. It will warn when the maximum amount of empty lines has been exceeded.
+```
+
+### comma-style
+```
+This rule enforce consistent comma style in array literals, object literals, and variable declarations.
+
+This rule does not apply in either of the following cases:
+
+- comma preceded and followed by linebreak (lone comma)
+- single-line array literals, object literals, and variable declarations
+```
+
+### array-bracket-spacing
+```
+This rule enforces consistent spacing inside array brackets.
+```
+
+### block-spacing
+```
+This rule enforces consistent spacing inside an open block token and the next token on the same line. This rule also enforces consistent spacing inside a close block token and previous token on the same line.
+```
+
+### comma-spacing
+```
+This rule enforces consistent spacing before and after commas in variable declarations, array literals, object literals, function parameters, and sequences.
+
+This rule does not apply in either of the following cases:
+
+- between two commas
+- between opening bracket [ and comma, to avoid conflicts with the array-bracket-spacing rule
+- between comma and closing bracket ], to avoid conflicts with the array-bracket-spacing rule
+- between comma and closing brace }, to avoid conflicts with the object-curly-spacing rule
+- between comma and closing parentheses ), to avoid conflicts with the space-in-parens rule
+```
+
+### no-duplicate-imports
+```
+This rule requires that all imports from a single module that can be merged exist in a single import statement.
+```
